@@ -93,6 +93,34 @@ rgb(24, 29, 49)
       opacity: 1;
     }
   }
+  .swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	        animation: swirl-in-fwd 0.6s ease-out both;
+}  
+@-webkit-keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
   
 @-webkit-keyframes wobble-hor-bottom {
     0%,
@@ -230,6 +258,34 @@ rgb(24, 29, 49)
 	-webkit-animation: slit-in-vertical 0.45s ease-out both;
 	animation: slit-in-vertical 0.45s ease-out both;
 }
+.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	        animation: swirl-in-fwd 0.6s ease-out both;
+}
+@-webkit-keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
 body {
     background: rgb(240, 233, 210);
     background: radial-gradient(circle, rgba(240, 233, 210, 1) 0%, rgba(103, 137, 131, 1) 100%);
@@ -311,6 +367,7 @@ header {
     font-weight: bold;
     padding: 20px;
 }
+.mate-logo{padding: 10px;}
 
 .foto2 {
     grid-area: foto2;
@@ -374,6 +431,11 @@ footer {
     border: #181D31 5px solid;
 }
 
+.menu{display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: center;
+}
 nav ul {
     display: flex;
     align-items: center;
@@ -491,7 +553,7 @@ nav ul {
     gap: 20px;
 }
 
-.grillaCatalogo img {
+.zoomCat{
     border: black 2px solid;
     border-radius: 5%;
 
@@ -709,7 +771,8 @@ text-align: center;
 margin: 10px;
 padding: 20px;}
 .grillaMatetips img{max-width: 70%;}
-
+.menu ul li{
+    font-weight: normal;}
 @media screen and (max-width:769px) {
 
     .grillaMateando {
@@ -772,6 +835,7 @@ padding: 20px;}
     .comoCuidar{margin: 150px;}
     
 header, footer{height: 200px;}
+header {flex-wrap:wrap ;}
 }
 
 @media screen and (max-width:481px) {
@@ -855,7 +919,7 @@ header, footer{height: 200px;}
     .listaCompra{height: 500px;}
     .reseña{height: 70px;}
     header{
-        height: 250px;
+        height: 300px;
         flex-wrap: wrap;
         font-weight: bolder;
         font-size: 20px;
@@ -873,6 +937,10 @@ header, footer{height: 200px;}
         padding: 2px;
         text-align: center;
     }
-
+.logo {flex-wrap: wrap;}
+header nav ul{flex-direction: column;}
+.menu ul li{
+    font-weight: lighter;
+font-size: large;}
 }
 
