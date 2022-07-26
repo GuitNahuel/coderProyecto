@@ -302,7 +302,7 @@ font-family: 'Ubuntu', sans-serif;
 padding: 20px;}
 .navbar-brand{color: #678983;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 20px;}
+    padding: 5px;}
 
 h2{font-size: medium;}
 nav ul li {
@@ -925,5 +925,10 @@ footer{height: 200px;}
 .menu ul li{
     font-weight: lighter;
 font-size: large;}
+.navbar-brand{display: flex;align-items: center;
+flex-direction: column;
+padding: 0px;
+justify-content: center;
+margin-right: 0px;}
 }
 
