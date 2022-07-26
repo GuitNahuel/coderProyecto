@@ -1,2 +1,2 @@
 # coderProyecto
-Proyecto sobre la cursada de Desarrollo Web 
+Aplicando Bootstrap y lo visto hasta la ultima clase, antes de la entrega del segundo proyecto
