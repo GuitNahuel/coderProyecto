@@ -291,6 +291,19 @@ body {
     background: radial-gradient(circle, rgba(240, 233, 210, 1) 0%, rgba(103, 137, 131, 1) 100%);
     font-family: 'Josefin Sans', sans-serif;
 }
+header{background-color: #181D31;color: #678983;}
+
+.botoncolor{background-color: #678983;}
+.colorNav{
+    background-color:#181D31;
+    color:#678983;}
+.nav-link {color: #678983;
+font-family: 'Ubuntu', sans-serif;
+padding: 20px;}
+.navbar-brand{color: #678983;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;}
+
 h2{font-size: medium;}
 nav ul li {
     display: flex;
@@ -320,7 +333,6 @@ nav ul li a {
 .grillaMateando {
     display: grid;
     grid-template-areas:
-        "header header header"
         "titulo titulo titulo"
         "foto1 ahora12 foto2"
         "memes memes memes"
@@ -329,16 +341,6 @@ nav ul li a {
     gap: 20px;
 }
 
-header {
-    grid-area: header;
-    background-color: #181D31;
-    color: #678983;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .titulo {
     grid-area: titulo;
@@ -419,6 +421,7 @@ header {
 footer {
     grid-area: footer;
     background-color: #181D31;
+    color: #678983;
     display: flex;
     height: 150px;
     justify-content: center;
@@ -464,7 +467,6 @@ nav ul {
 .grillaQuienes {
     display: grid;
     grid-template-areas:
-        "header header header"
         "titulo2 titulo2 titulo2"
         "foto-grupo foto-grupo foto-grupo"
         "textoquien textoquien textoquien"
@@ -489,6 +491,7 @@ nav ul {
 .local1 img, .local2 img {
     border-radius: 50%;
     border: #181D31 10px solid;
+    width: 70%;
 }
 
 .textoLocal {
@@ -544,7 +547,6 @@ nav ul {
 .grillaCatalogo {
     display: grid;
     grid-template-areas:
-        "header header header"
         "titulo3 titulo3 titulo3"
         "producto1 producto2 producto3"
         "producto4 producto5 producto6"
@@ -676,7 +678,6 @@ nav ul {
 .grillaComo{
     display: grid;
     grid-template-areas:
-    "header header header"
     "titulo4 titulo4 titulo4"
     "listaCompra listaCompra listaCompra"
     "enviosM cuotasM descuentoM"
@@ -728,7 +729,6 @@ height: 200px;}
 .grillaMatetips
 {   display: grid;
     grid-template-areas:
-    "header header header"
     "titulo5 titulo5 titulo5"
     "reseña reseña reseña"
     "comoCurar comoCebar comoCuidar"
@@ -777,7 +777,6 @@ padding: 20px;}
 
     .grillaMateando {
         grid-template-areas:
-            "header header"
             "titulo titulo"
             "foto1 foto2"
             "ahora12 ahora12"
@@ -789,7 +788,6 @@ padding: 20px;}
 
     .grillaQuienes {
         grid-template-areas:
-        "header header"
         "titulo2 titulo2"
         "foto-grupo foto-grupo"
         "textoquien textoquien"
@@ -802,7 +800,6 @@ padding: 20px;}
     .grillaCatalogo {
         display: grid;
         grid-template-areas:
-            "header header"
             "titulo3 titulo3"
             "producto1 producto2"
             "producto3 producto4"
@@ -816,7 +813,6 @@ padding: 20px;}
     .grillaComo{
         display: grid;
         grid-template-areas:
-        "header header"
         "titulo4 titulo4"
         "listaCompra listaCompra"
         "enviosM cuotasM"
@@ -826,7 +822,6 @@ padding: 20px;}
     }
     .grillaMatetips{
     grid-template-areas:
-    "header header"
     "titulo5 titulo5"
     "reseña reseña"
     "comoCurar comoCebar"
@@ -834,8 +829,9 @@ padding: 20px;}
     "footer footer"}
     .comoCuidar{margin: 150px;}
     
-header, footer{height: 200px;}
-header {flex-wrap:wrap ;}
+footer{height: 200px;}
+
+.listaCompra{height: 600px;}
 }
 
 @media screen and (max-width:481px) {
@@ -851,7 +847,6 @@ header {flex-wrap:wrap ;}
     
     .grillaMateando {
         grid-template-areas:
-            "header"
             "titulo"
             "foto1"
             "ahora12"
@@ -867,7 +862,6 @@ header {flex-wrap:wrap ;}
     .grillaQuienes {
         
         grid-template-areas:
-            "header"
             "titulo2"
             "foto-grupo"
             "textoquien"
@@ -882,7 +876,6 @@ header {flex-wrap:wrap ;}
     .grillaCatalogo {
         display: grid;
         grid-template-areas:
-            "header"
             "titulo3"
             "producto1"
             "producto2"
@@ -898,7 +891,6 @@ header {flex-wrap:wrap ;}
     .grillaComo{
         display: grid;
         grid-template-areas:
-        "header"
         "titulo4"
         "listaCompra"
         "enviosM"
@@ -908,7 +900,6 @@ header {flex-wrap:wrap ;}
     }
     .grillaMatetips{
         grid-template-areas:
-        "header"
         "titulo5"
         "reseña"
         "comoCurar" 
@@ -916,15 +907,8 @@ header {flex-wrap:wrap ;}
         "comoCuidar"
         "footer"}
         .comoCuidar{margin: 20px;}
-    .listaCompra{height: 500px;}
+    .listaCompra{height: 900px;}
     .reseña{height: 70px;}
-    header{
-        height: 300px;
-        flex-wrap: wrap;
-        font-weight: bolder;
-        font-size: 20px;
-        padding: 5px;
-    }
     footer{height: 100px;}
     .logo {
         display: flex;
@@ -938,7 +922,6 @@ header {flex-wrap:wrap ;}
         text-align: center;
     }
 .logo {flex-wrap: wrap;}
-header nav ul{flex-direction: column;}
 .menu ul li{
     font-weight: lighter;
 font-size: large;}
